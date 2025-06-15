@@ -17,6 +17,7 @@ body {
   background-color: #111111;
   color: #ffffff;
   font-family: 'Proxima Nova', Georgia, sans-serif;
+  font-smooth: antialiased;
 }
 
 header {
@@ -31,6 +32,7 @@ nav {
   align-items: center;
   gap: 1rem;
   font-size: 0.875rem;
+  font-weight: 600;
 }
 
 nav a {
@@ -78,6 +80,7 @@ form {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 form input {
@@ -112,6 +115,24 @@ form button {
 
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
+}
+
+.privacy a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+.privacy a:hover {
+  background-color: hsla(0,0%,100%,.18);
+  cursor: pointer;
+}
+
+.privacy a:visited {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 @media (min-width: 668px) {
