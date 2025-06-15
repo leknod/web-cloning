@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./assets/fonts/proxima-nova-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #111111;
+  color: #ffffff;
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+header {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  color: #eeeeee;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+nav a:hover {
+  background-color: hsla(0,0%,100%,.18);
+}
+
+nav a:visited {
+  color: #eeeeee;
+}
+
+nav button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  cursor: not-allowed;
+}
+
+nav svg, main svg {
+  width: 1rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo svg {
+  width: 10rem;
+}
+
+form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form input {
+  width: 90%;
+  min-height: 44px;
+  border-radius: 0.5rem;
+  background-color: #333333;
+  border: none;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  caret-color: #3969ef;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button {
+  all: unset;
+  position: absolute;
+  right: 7.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  opacity: 0.56;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+@media (min-width: 668px) {
+  form {
+    width: 668px;
+  }
+
+  form input {
+    max-width: 668px;
+  }
+
+  form button {
+    right: 50px;
+  }
+}
+
+@media (min-width: 800px) {
+  header {
+  padding: 2.5rem 3rem;
+  margin-bottom: 5rem;
+}
+
+  .logo svg {
+    width: 12.5rem;
+  }
+
+  form input {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+  padding: 2.5rem 4rem;
+  }
+}
